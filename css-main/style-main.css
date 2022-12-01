@@ -1,0 +1,9 @@
+body {
+  width: 1200px; }
+
+.titulo-catalogo {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }

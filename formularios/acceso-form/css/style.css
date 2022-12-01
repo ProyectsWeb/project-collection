@@ -1,0 +1,78 @@
+body {
+  width: 100%;
+  color: #fff; }
+  body h2 {
+    color: black;
+    text-align: center; }
+
+.container-main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 3rem auto; }
+  .container-main .container-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    margin: 2rem;
+    margin-right: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.3rem; }
+    .container-main .container-form .titulo-form {
+      font-family: Montserrat, sans-serif;
+      text-align: center;
+      color: #fff; }
+    .container-main .container-form .box-input {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 1.5rem;
+      margin-left: auto;
+      margin-right: auto; }
+      .container-main .container-form .box-input input {
+        margin: .3rem;
+        height: 2.7rem;
+        border-radius: 1.6rem;
+        border: none; }
+        .container-main .container-form .box-input input::placeholder {
+          color: rgba(0, 0, 0, 0.555);
+          padding-left: .5rem; }
+      .container-main .container-form .box-input input[type="submit"] {
+        background-color: chartreuse;
+        font-weight: 600;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        cursor: pointer; }
+        .container-main .container-form .box-input input[type="submit"]:hover {
+          background-color: #15ff00;
+          color: #005bea; }
+    .container-main .container-form .checkbox {
+      margin: 1rem .2rem 1rem 1.5rem; }
+    .container-main .container-form .preguntas {
+      display: inline-block;
+      font-size: 1rem;
+      margin: 1rem; }
+      .container-main .container-form .preguntas a {
+        margin: .5rem;
+        color: #fff;
+        text-decoration: none; }
+  .container-main .box-imagen {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin: 2rem;
+    margin-left: 1rem;
+    border-radius: 1.5rem; }
+    .container-main .box-imagen img {
+      width: 100%;
+      height: 100%; }
+
+@media (max-width: 576px) {
+  .container-main {
+    flex-direction: column;
+    width: 100%; }
+    .container-main .container-form, .container-main .box-imagen {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; } }

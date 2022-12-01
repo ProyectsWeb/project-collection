@@ -1,0 +1,103 @@
+body{
+    width: 100%;
+    color: #fff;  
+    h2{
+        color: black;
+        text-align: center;
+    }
+}
+
+
+.container-main{
+    display: flex;   
+    justify-content: space-between;
+    width: 80%;    
+    margin: 3rem auto;
+    .container-form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;       
+        background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+        margin: 2rem;
+        margin-right: 1rem;
+        border-radius: 1.5rem;
+        font-size: 1.3rem;
+        .titulo-form{
+            font-family: Montserrat, sans-serif;
+            text-align: center;  
+            color: #fff;         
+        }
+
+        .box-input{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin-top: 1.5rem;           
+            margin-left: auto;
+            margin-right: auto;   
+            input{
+                margin: .3rem;
+                height: 2.7rem;
+                border-radius: 1.6rem;
+                border: none;
+                &::placeholder{
+                    color:rgba(0, 0, 0, 0.555);
+                    padding-left: .5rem;
+                }
+            }   
+            input[type="submit"]{
+                background-color: chartreuse;
+                font-weight: 600;
+                letter-spacing: 1rem; 
+                text-transform: uppercase;  
+                cursor: pointer;  
+                &:hover{
+                    background-color: rgb(21, 255, 0); 
+                    color: #005bea;
+                }          
+            }                  
+        }
+
+        .checkbox{
+            margin: 1rem .2rem 1rem 1.5rem ;
+        }
+
+        .preguntas{
+            display: inline-block;
+            font-size: 1rem;
+            margin: 1rem;
+            a{
+               margin: .5rem;
+               color: #fff;
+               text-decoration: none;
+            }
+        }
+    }
+
+    .box-imagen{
+        width: 50%;       
+        height: auto;
+        overflow: hidden;
+        margin: 2rem;
+        margin-left: 1rem;
+        border-radius: 1.5rem;        
+        img{
+            width: 100%;                    
+            height: 100%;                      
+        }
+    }
+}
+
+
+@media (max-width: 576px) { 
+
+    .container-main{
+       flex-direction: column;
+       width: 100%;
+       .container-form, .box-imagen{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+       }
+    }
+}
