@@ -1,0 +1,104 @@
+body {
+  width: 100%;
+  color: #fff; }
+  body h2 {
+    color: black;
+    text-align: center; }
+  body .ejemplo {
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 5rem; }
+
+.container-ejemplo-2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 8rem auto;
+  /*   margin-top: 15rem; */
+  /* .box-imagen{
+        width: 50%;       
+        height: auto;
+        overflow: hidden;
+        margin: 2rem;
+        margin-left: 1rem;
+        border-radius: 1.5rem;        
+        img{
+            width: 100%;                    
+            height: 100%;                      
+        }
+    } */ }
+  .container-ejemplo-2 .container-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.644);
+    -webkit-box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.86);
+    box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.86); }
+    .container-ejemplo-2 .container-form .fa {
+      background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+      width: 8rem;
+      height: 8rem;
+      font-size: 8rem;
+      text-align: center;
+      color: rgba(30, 34, 34, 0.863);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -3rem;
+      border-radius: 50%;
+      border: 10px solid rgba(207, 199, 199, 0.158); }
+    .container-ejemplo-2 .container-form .titulo-form {
+      font-family: Montserrat, sans-serif;
+      text-align: center;
+      color: #167dd1; }
+    .container-ejemplo-2 .container-form .box-input {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 1.5rem;
+      margin-left: auto;
+      margin-right: auto; }
+      .container-ejemplo-2 .container-form .box-input input {
+        margin: .3rem;
+        height: 2.7rem;
+        height: 4rem;
+        border-radius: 1.6rem;
+        border: none;
+        background-color: rgba(136, 130, 130, 0.226); }
+        .container-ejemplo-2 .container-form .box-input input::placeholder {
+          color: rgba(0, 0, 0, 0.555);
+          padding-left: .5rem; }
+      .container-ejemplo-2 .container-form .box-input input[type="submit"] {
+        background-color: #3cb8d9;
+        font-weight: 500;
+        letter-spacing: .8rem;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer; }
+        .container-ejemplo-2 .container-form .box-input input[type="submit"]:hover {
+          /*  background-color: rgb(21, 255, 0);  */
+          background-color: #20b0d8;
+          color: #005bea; }
+    .container-ejemplo-2 .container-form .checkbox {
+      margin: 1rem .2rem 1rem 1.5rem; }
+    .container-ejemplo-2 .container-form .preguntas {
+      display: inline-block;
+      font-size: 1rem;
+      margin: 1rem; }
+      .container-ejemplo-2 .container-form .preguntas a {
+        margin: .5rem;
+        color: #fff;
+        text-decoration: none; }
+
+@media (max-width: 576px) {
+  .container-main {
+    flex-direction: column;
+    width: 100%; }
+    .container-main .container-form, .container-main .box-imagen {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; } }

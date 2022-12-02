@@ -4,6 +4,10 @@ body {
   body h2 {
     color: black;
     text-align: center; }
+  body .ejemplo {
+    color: black;
+    text-align: center;
+    font-size: 1.3rem; }
 
 .container-main {
   display: flex;

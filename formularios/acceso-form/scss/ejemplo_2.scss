@@ -9,28 +9,51 @@ body{
         color: black; 
         text-align: center;
         font-size: 1.3rem;
+        margin-bottom: 5rem;
     }
+
+    
 }
 
 
-.container-main{
-    display: flex;   
-    justify-content: space-between;
-    width: 80%;    
-    margin: 3rem auto;
+
+.container-ejemplo-2{
+    display: flex;    
+    width: 100%;    
+   justify-content: space-around;
+    margin: 8rem auto;
+  
+/*   margin-top: 15rem; */
+ 
     .container-form{
         display: flex;
         flex-direction: column;
-        width: 50%;       
-        background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-        margin: 2rem;
-        margin-right: 1rem;
+        width: 50%;   
+        margin: auto;      
         border-radius: 1.5rem;
         font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.644); 
+        -webkit-box-shadow: -1px 2px 14px -3px rgba(0,0,0,0.86);
+        -moz-box-shadow: -1px 2px 14px -3px rgba(0,0,0,0.86);
+         box-shadow: -1px 2px 14px -3px rgba(0,0,0,0.86);
+        
+         .fa{
+            background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+            width: 8rem;
+            height: 8rem;
+            font-size: 8rem;
+            text-align: center;
+            color: rgba(30, 34, 34, 0.863);           
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -3rem;
+            border-radius: 50%;
+            border: 10px solid rgba(207, 199, 199, 0.158);
+         }
         .titulo-form{
             font-family: Montserrat, sans-serif;
-            text-align: center;  
-            color: #fff;         
+            text-align: center; 
+            color: rgb(22, 125, 209);    
         }
 
         .box-input{
@@ -43,21 +66,25 @@ body{
             input{
                 margin: .3rem;
                 height: 2.7rem;
+                height: 4rem;
                 border-radius: 1.6rem;
                 border: none;
+                background-color: rgba(136, 130, 130, 0.226);
                 &::placeholder{
                     color:rgba(0, 0, 0, 0.555);
                     padding-left: .5rem;
                 }
             }   
-            input[type="submit"]{
-                background-color: chartreuse;
-                font-weight: 600;
-                letter-spacing: 1rem; 
+            input[type="submit"]{              
+                background-color: #3cb8d9;
+                font-weight: 500;
+                letter-spacing: .8rem; 
                 text-transform: uppercase;  
+                color: #fff;
                 cursor: pointer;  
                 &:hover{
-                    background-color: rgb(21, 255, 0); 
+                   /*  background-color: rgb(21, 255, 0);  */
+                    background-color: #20b0d8;
                     color: #005bea;
                 }          
             }                  
@@ -79,7 +106,7 @@ body{
         }
     }
 
-    .box-imagen{
+    /* .box-imagen{
         width: 50%;       
         height: auto;
         overflow: hidden;
@@ -90,7 +117,7 @@ body{
             width: 100%;                    
             height: 100%;                      
         }
-    }
+    } */
 }
 
 
