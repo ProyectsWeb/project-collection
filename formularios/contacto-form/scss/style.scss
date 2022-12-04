@@ -104,8 +104,7 @@ font-size: 16px;
             }
           }
 
-          .redes-sociales{
-            background-color: rgb(236, 223, 28);
+          .redes-sociales{           
             background-color: #000;
             h2{
                  margin-left: 1rem;               
@@ -158,11 +157,23 @@ font-size: 16px;
          margin: 0;         
         }
         .ubicacion{
-            width: auto;
-            background-color: red;
+            width: auto;           
             margin-top: 0;
             margin-left: 2rem;
         }
     }
     
+}
+
+@media (max-width: 380px) { 
+    .container-main{         
+        .container-form{        
+         margin: 0;               
+         width: auto;        
+        }
+        .ubicacion{              
+            width: auto;
+            margin: auto;           
+        }
+    }    
 }

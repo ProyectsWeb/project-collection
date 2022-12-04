@@ -87,7 +87,6 @@ body {
           .container-main .ubicacion .suscripcion .direccion a:hover {
             color: #fff; }
     .container-main .ubicacion .redes-sociales {
-      background-color: #ecdf1c;
       background-color: #000; }
       .container-main .ubicacion .redes-sociales h2 {
         margin-left: 1rem;
@@ -127,6 +126,13 @@ body {
       margin: 0; }
     .container-main .ubicacion {
       width: auto;
-      background-color: red;
       margin-top: 0;
       margin-left: 2rem; } }
+
+@media (max-width: 380px) {
+  .container-main .container-form {
+    margin: 0;
+    width: auto; }
+  .container-main .ubicacion {
+    width: auto;
+    margin: auto; } }
