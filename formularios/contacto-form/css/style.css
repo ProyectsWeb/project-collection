@@ -1,0 +1,132 @@
+body {
+  font-size: 16px; }
+
+.container-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  height: auto;
+  margin: 1rem auto;
+  background-color: rgba(5, 5, 5, 0.815); }
+  .container-main .container-form {
+    background-color: black;
+    width: 95%;
+    height: auto;
+    margin: 2rem;
+    border: none;
+    margin-right: 0; }
+    .container-main .container-form form {
+      width: 100%;
+      margin: 3rem; }
+      .container-main .container-form form input, .container-main .container-form form textarea {
+        border: none;
+        background-color: black;
+        color: #fff;
+        width: 80%;
+        height: 4rem;
+        border-bottom: 1px solid #fff;
+        margin: 0.5rem auto; }
+        .container-main .container-form form input::placeholder, .container-main .container-form form textarea::placeholder {
+          color: rgba(255, 255, 255, 0.664);
+          font-size: 1.2rem;
+          width: auto; }
+        .container-main .container-form form input:active, .container-main .container-form form textarea:active {
+          background-color: rgba(103, 103, 105, 0.247); }
+      .container-main .container-form form textarea {
+        border: none;
+        background-color: black;
+        color: rgba(255, 255, 255, 0.664);
+        border-bottom: 1px solid #fff;
+        min-width: 80%;
+        max-width: 80%;
+        min-height: 7rem;
+        max-height: 7rem; }
+      .container-main .container-form form input[type="submit"] {
+        background-color: #3cb9d4;
+        letter-spacing: 1px;
+        width: 8rem;
+        height: 3rem;
+        margin-top: 3rem;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        border: none;
+        cursor: pointer; }
+        .container-main .container-form form input[type="submit"]:hover {
+          background-color: #81d6e9;
+          color: #000; }
+  .container-main .ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    width: 93%;
+    height: auto;
+    margin: 2rem 0;
+    color: #fff; }
+    .container-main .ubicacion .suscripcion {
+      background-color: black; }
+      .container-main .ubicacion .suscripcion h6 {
+        margin-left: 1rem;
+        margin-bottom: .6rem;
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      .container-main .ubicacion .suscripcion h2 {
+        margin: 0 1rem;
+        font-size: 2.5rem;
+        color: #3cb9d4; }
+      .container-main .ubicacion .suscripcion .direccion {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin: 1rem; }
+        .container-main .ubicacion .suscripcion .direccion a {
+          font-size: 1.4rem;
+          color: #3cb9d4; }
+          .container-main .ubicacion .suscripcion .direccion a:hover {
+            color: #fff; }
+    .container-main .ubicacion .redes-sociales {
+      background-color: #ecdf1c;
+      background-color: #000; }
+      .container-main .ubicacion .redes-sociales h2 {
+        margin-left: 1rem;
+        font-size: 2.5rem;
+        color: #3cb9d4; }
+      .container-main .ubicacion .redes-sociales ul {
+        display: flex;
+        width: auto; }
+        .container-main .ubicacion .redes-sociales ul li {
+          background-color: #3cb9d4;
+          width: 2.2rem;
+          height: 2.2rem;
+          list-style: none;
+          font-size: 1.7rem;
+          border-radius: 50%;
+          margin: 1rem;
+          margin-left: 0; }
+          .container-main .ubicacion .redes-sociales ul li a {
+            font-size: 1.7rem;
+            text-align: center; }
+            .container-main .ubicacion .redes-sociales ul li a i {
+              margin: .3rem;
+              color: #fff; }
+      .container-main .ubicacion .redes-sociales span {
+        display: flex;
+        font-size: 1.125rem;
+        color: #fff;
+        margin: 2rem auto;
+        margin-left: 1rem; }
+
+@media (max-width: 800px) {
+  .container-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #000; }
+    .container-main .container-form {
+      margin: 0; }
+    .container-main .ubicacion {
+      width: auto;
+      background-color: red;
+      margin-top: 0;
+      margin-left: 2rem; } }
