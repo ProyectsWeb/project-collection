@@ -1,5 +1,8 @@
 body{  
+    /* width: 1000px; */
 font-size: 16px;   
+/* margin-left: auto;
+margin-right: auto; */
 }
 
 .container-main{
@@ -150,30 +153,46 @@ font-size: 16px;
 
 @media (max-width: 800px) { 
     .container-main{
+        width: 85%;       
         display: grid;
         grid-template-columns: 1fr;
-        background-color: #000;
-        .container-form{        
+        background-color: #000;      
+        .container-form{ 
+         width: 90%;       
          margin: 0;         
         }
         .ubicacion{
-            width: auto;           
-            margin-top: 0;
-            margin-left: 2rem;
+            width: auto; 
+            width: 100%;                       
+            margin-top: 0;            
         }
     }
     
 }
 
 @media (max-width: 380px) { 
-    .container-main{         
-        .container-form{        
+    .container-main{        
+        .container-form{  
+         width: 100%;
          margin: 0;               
-         width: auto;        
+         width: auto; 
+         form{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;           
+            input,  textarea{
+                width: 95%;
+                margin-left: .5rem;
+                margin-right: .5rem;              
+                min-width: 95%;                   
+                max-width: 95%;                
+            }
+         }
+
         }
         .ubicacion{              
             width: auto;
-            margin: auto;           
+            margin: auto;                     
         }
     }    
 }

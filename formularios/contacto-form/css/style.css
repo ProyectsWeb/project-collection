@@ -1,5 +1,8 @@
 body {
-  font-size: 16px; }
+  /* width: 1000px; */
+  font-size: 16px;
+  /* margin-left: auto;
+margin-right: auto; */ }
 
 .container-main {
   display: grid;
@@ -119,20 +122,33 @@ body {
 
 @media (max-width: 800px) {
   .container-main {
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr;
     background-color: #000; }
     .container-main .container-form {
+      width: 90%;
       margin: 0; }
     .container-main .ubicacion {
       width: auto;
-      margin-top: 0;
-      margin-left: 2rem; } }
+      width: 100%;
+      margin-top: 0; } }
 
 @media (max-width: 380px) {
   .container-main .container-form {
+    width: 100%;
     margin: 0;
     width: auto; }
+    .container-main .container-form form {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .container-main .container-form form input, .container-main .container-form form textarea {
+        width: 95%;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        min-width: 95%;
+        max-width: 95%; }
   .container-main .ubicacion {
     width: auto;
     margin: auto; } }
